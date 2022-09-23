@@ -1,21 +1,18 @@
 <ion-content>
   <h1>Vai dar namoro</h1>
-  <h3>Será que ele(a) é sua alma gemêa?</h3>
-  <br><br>
-  <h4>Nome  da 1ª pessoa</h4>
+  <h4 style="margin-top: 350px;">Nome  da 1ª pessoa</h4>
   <ion-item class="ion-no-padding">
     <ion-input type="text" [(ngModel)]="nome1"></ion-input>
   </ion-item>
   <div class="icone">
-    <ion-icon name="add"></ion-icon>
   </div>
-  <h4>Nome  da 2ª pessoa</h4>
+  <h4 style="margin-top: 50px;">Nome  da 2ª pessoa</h4>
   <ion-item class="ion-no-padding">
     <ion-input type="text" [(ngModel)]="nome2"></ion-input>
   </ion-item>
-  <ion-button (click)="calcular()" expand="full" color="danger" id="abrir-resposta">Calcular</ion-button>
+  <ion-button (click)="calcular()" expand="full" id="abrir-resposta">Vai dar namoro?</ion-button>
 
-  <ion-modal id="resposta" #modal trigger="abrir-resposta">
+  <ion-modal id="resposta"  #modal trigger="abrir-resposta" show-backdrop="false" >
     <ng-template>
       <div class="wrapper">
         <h1>{{porcentagem}}%</h1>

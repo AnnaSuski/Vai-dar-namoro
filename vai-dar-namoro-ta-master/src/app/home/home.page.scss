@@ -2,45 +2,47 @@
 
 ion-content{
   --padding-start: 32px;
-  --padding-top: 32px;
+  --padding-top: 2px;
   --padding-end: 32px;
   font-family: 'Aref Ruqaa Ink', sans-serif;
-  --background: #F8D5DF url('../../assets/image.png') no-repeat center center / cover !important;
+  --background: #F8D5DF url('../../assets/group1.png') no-repeat center center / cover !important;
 }
 
 h1{
-  font-weight: 700;
+  font-weight:1000;
   font-size: 28px;
   text-align: center;
 }
 
-h3{
-  font-weight: 400;
-  font-size: 18px;
+h4{
+  font-weight: 1000;
+  text-align: end;
 }
 
-.icone{
-  display: flex;
-  justify-content: center;
-  margin-top: 38px;
-  ion-icon{
-    font-size: 48px;
-  }
+ion-input{
+  text-align: center;
 }
 
 ion-item{
   font-weight: 700;
-  background-color: #F8D5DF;
   border-radius: 5px;
 }
 
 ion-button{
-  width: calc(100% - 64px);
-  border-radius: 10px;
+  width: calc(100% - 94px);
+  margin-left: 3%;
   position: absolute;
   bottom: 32px;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 900;
   font-family: 'Aref Ruqaa Ink', sans-serif;
+  --color: Black;
+  --background: #F16398;
+}
+
+ion-modal{
+  margin-bottom: 420px;
+  margin-left: 150px;
 }
 
 #resposta{
@@ -48,9 +50,9 @@ ion-button{
   --min-width: 50%;
   --height: fit-content;
   --border-radius: 15px;
-  --box-shadow: 0 28px 48px rgba(0,0,0,0.4);
   text-align: center;
-  --background: #F8D5DF
+  --background: #F16398;
+  color: white;
 }
 
 .wrapper{
